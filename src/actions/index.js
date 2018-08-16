@@ -10,7 +10,11 @@ export const setTypingValue = value => ({
     payload: value
 });
 
-export const sendMessage = value => ({
-    
+export const sendMessage = (message, userId) => ({
+    type: SEND_MESSAGE,
+    payload: {
+        message,
+        userId
+    }
 })
 
