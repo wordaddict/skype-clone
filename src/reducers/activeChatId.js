@@ -1,9 +1,9 @@
-import { SET_ACTIVE_USER_ID } from "../constants/action-types";
+import { EDIT_CHAT } from "../constants/action-types";
 
 export default function activeUserId(state = null, action) {
   switch (action.type) {
-    case SET_ACTIVE_USER_ID:
-      return action.payload;
+    case EDIT_CHAT:
+      return action.payload.number;
 
     default:
       return state;
